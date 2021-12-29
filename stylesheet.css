@@ -1,38 +1,452 @@
 body{
     font-size: 16px;
-    color: black;
     background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-y: scroll;
 }
-#head{
+/*header style*/
+#header{
     background-color: black;
     border-radius: 0;
     border: 0;
-    height: 115px;
+    height: 120px;
+    width: auto;
+    margin-top:0;
+    margin-left:0;
+    margin-right: 0;
+    position: static;
 }
 #logo-img{
-width: 100px;
-height: 100px;
-margin: 0 200px 40px 10px;
-border-radius: 90px;
-float: left;
-}
+    width: 100px;
+    height: 100px;
+    margin: 10px 70px 40px 10px;
+    border-radius: 90px;
+    float: left;
+    } 
 .navbar-brand{
-    padding-top: 25px;
+    padding-top: 30px;
 }
 .navbar-brand h1{
     color:firebrick;
     font-family: monospace;
     font-style: oblique;
 text-shadow: 1px 1px 1px firebrick;
-margin-top: 0;
+margin-right: 10px;
+margin-top: 0px;
 margin-bottom: 0;
-
+float: left;
+vertical-align: middle;
 }
-a, a:hover, a:after, a:before, a:focus{
+ a, a:hover, a:after, a:before, a:focus{
 color: firebrick;
 text-decoration: none;
+font-size: 17px;
+}
+.gold{
+    background-color: goldenrod;
+    height: 4px;
+    margin: -20px 0 30px 0;
+    width: auto;
+    position: static;
+}
+/*list and dropdown style*/
+.navbar{
+    overflow: hidden;
+}
+.navbar-toggler{
+    position:relative;
+    float:right;
+    padding:9px 10px;
+    margin-top: 40px ;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left:0px;
+    background-color:rgb(236, 228, 213);
+    background-image: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    display:block;
+    width: 40px;
+    height: 40px;  
+}
+.navbar-toggler:focus{
+    outline: 0;
+}
+.navbar-toggler .navbar-toggler-iconr{
+border-radius: 1px;
+}
+.navbar-toggler .navbar-toggler-icon + .navbar-toggler-icon{
+margin-top: 4px ;
+}
+.navbar-header button.navbar-toggler{
+clear: both;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  /*main content style*/
+.container-2{
+display: inline-block;
+align-items: center;
+}
+.aside-style-1{
+   margin: 10px 10px 50px 100px;
+    background-color: #EEEEEE;
+    padding:30px 30px 50px 20px;   
+}
+.aside-style-2{
+margin: 10px 10px 50px 100px;
+    background-color: #EEEEEE;
+     padding:30px 60px 20px 130px;
+}
+section.aside-style-2 > p{
+padding-left: 15px;
+}
+.img-delivary{
+height: 40px;
+width: 75px;
+margin: -190px 7px 50px 145px;
+}
+.article-aside{
+    float: right;
+}
+.jumbotron{
+    padding: 10px 30px 10px 30px;
+    margin: 10px 30px 0 30px; 
+    float: left;
+}
+#main-article{
+    margin: 20px 10px 20px 90px;
+}
+div#restaurant-div{
+    width:30em;
+}
+/*options style*/
+#menu-tile, #special-tile, #map-tile{
+    height: 250px;
+    margin-bottom: 75px;
+    position: relative;
+    border: 2px solid #EEEEEE;
+    overflow: hidden;
+    padding: 5px 150px 150px 150px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#menu-tile:hover, #special-tile:hover, #map-tile:hover{
+box-shadow: 0 1px 5px 1px #cccccc;
+}
+div#home-tiles{
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: 10px; 
+    
+     }
+#menu-img{
+margin-top: -35px;
+margin-left: -70px;
+margin-bottom: -10px;
+}
+#special-img{
+margin-top: -50px;
+margin-left: -150px;
+}
+ iframe#map-id{
+     max-width: 300;
+     width: 50em;
+     height: 209px;
+     margin-left: -9em;
+     margin-right: -9em;
+ }           
+/*footer style*/
+div.row span,p,q{
+    font-size: 14px;
+}
+div.text-center{
+    font-size: 13px;
+}
+#address > p, #hours{
+    line-height: 2;
+}
+#address >:nth-child(4){
+    color:brown;
+}
+#testimonials > p{
+    font-style: italic;
+}
+/*menu categories style*/
+.category-tile{
+    position: relative;
+    border: 2px solid #cccccc;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: white;
+    font-style: oblique;
+    font-weight: 800;
+    opacity: .8;
+}
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title + div{
+    margin-bottom: 50px;
+}
+/*single category style*/
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+.menu-item-tile hr{
+    width: 80%;
+}
+.menu-item-title{
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-price{
+    font-size: 15px;
+    margin-top:-20px;
+    margin-right: 40px;
+    text-align: right;
+}
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.menu-item-photo div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    background-color:goldenrod;
+    text-align: center;
+}
+.menu-item-description{
+    padding-right: 40px;
+}
+h3.menu-item-title{
+    margin: 0 0 10px;
+}
+.menu-item-details{
+    font-size: .9em;
+    font-style: italic;
 }
 
+@media (min-width:1200px){ 
+    div#restaurant-div.jumbotron{
+        margin-left: 100px ;
+        margin-right: 20px;
+    }
+    article#main-article, .aside-style-1, .aside-style-2{
+        margin-left: -90px;
+        margin-right: 40px;
+    }
+    .aside-style-1{
+        padding-left: 50px;
+    }
+    #nav-list{
+        margin-left:50em ;
+    }
+    .img-delivary{
+        margin-left: -30px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    #logo-img{
+        width: 100px;
+        height: 100px;
+        margin: 10px 30px 5px 0;
+    }
+   article#main-article, .aside-style-1, .aside-style-2{
+    margin-left: 20px;
+    margin-right: 10px;
+    }
+    .aside-style-1, .aside-style-2{
+        padding-right: 50px;
+    }
+    div#restaurant-div.jumbotron {
+        width: 20em;
+        margin-right: 0;
+       margin-left: 20px;
+       padding-left: 0;
+    }
+    .img-delivary{
+        margin-left: 60px;
+    }
+    #nav-list{
+        margin-left:40em ;
+    }
 
+  
+}
+@media (min-width:768px) and (max-width:991px){
+div#restaurant-div.jumbotron {
+    width: 20em;
+   margin-left: 10px;
+   padding-left: 0;
+}
+article#main-article,.aside-style-1, .aside-style-2{
+    margin-left: 0;
+    margin-right: 60px;
+}
+.img-delivary{
+    margin-left: 0;
+}
+section.aside-style-2{
+    padding-left: 65px;
+}
+.aside-style-1{
+    text-align: center;
+}
+#nav-list{
+    margin-left:30em ;
+    margin-top: 25px;
+}
+#home-tiles{
+width: 87%;
+}
 
+}
+@media (max-width:767px){
+    #collapsable-nav a{
+        font-size:1.2em;
+    }
+    h1{
+        font-size: 35px;
+      margin:30px 30px 30px 10px;
+    }
+    #nav-list{
+       text-align: center;
+        background-color: black;
+        opacity: 90%; 
+      width: 46.5em;
+    }
+    .jumbotron{         
+        max-width: 200px;
+        align-items: center;
+    }
+    #res-id{
+    width: 400px;
+    }
+article#main-article{
+       margin-right: 0;
+       margin-left: auto;
+       padding-left: 10px;
+       align-items: center;
+                }
+    .aside-style-1{
+        padding-left: 20px;
+        text-align: center;
+                }
+ #menu-tile, #special-tile, #map-tile{
+        max-width: 430px;
+                } 
+    #home-tiles{
+align-items: center;
+    }
+   div#menu-tile >span{
+       margin-left: 45px;
+   }             
+    .panel-footer section{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section hr {
+        margin-top: 10px;
+        margin-bottom: -20px;
+        padding: 0;
+        background-color: darkgray;
+    }
+    .menu-item-photo{
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .menu-item-description, .menu-item-title{
+        text-align: center;
+    }
+
+}
+@media (min-width:375px){
+
+    }
+@media (min-width: 768px){
+        .navbar-toggler{
+            display: none;
+        }
+    }
+@media (max-width:479px){
+        #menu-tile, #special-tile, #map-tile{
+            width: 280px;
+            margin: 0 20px 15px;
+        }
+        #home-tiles{
+            width: auto;
+            }
+        .container-2{
+                align-items: center;   
+            }
+        div#restaurant-div.jumbotron{
+                margin:0;
+                padding: 0;
+                width: 0%;
+            }
+         #sec-1{
+                margin-top: 15em;
+                margin-right: 85px;
+                margin-left: 60px;
+            }
+         .aside-style-1{
+                text-align: center;
+            }
+        .img-delivary{
+                margin-left: 100px;
+            }
+        #sec-2 {
+                margin-right: 95px;
+                padding-left: 60px;
+              text-align: center;
+            }
+
+        #res-id{
+            width: 19em;
+            margin-left: 40px;
+         
+        }     
+        .navbar-brand h1{
+            padding-top: 15px;
+            font-size: 7vw;
+        }
+        .col-xxs-12{
+            width: 100%;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
