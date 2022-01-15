@@ -342,6 +342,7 @@ width: 87%;
         background-color: black;
         opacity: 90%; 
       width: 10em;
+    margin-left: 240px;
     }
     .jumbotron{         
         max-width: 200px;
