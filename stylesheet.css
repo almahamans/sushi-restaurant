@@ -341,7 +341,7 @@ width: 87%;
        text-align: center;
         background-color: black;
         opacity: 90%; 
-      width: 46.5em;
+      width: 40em;
     }
     .jumbotron{         
         max-width: 200px;
@@ -449,4 +449,5 @@ align-items: center;
             padding-left: 15px;
             padding-right: 15px;
         }
+
     }
