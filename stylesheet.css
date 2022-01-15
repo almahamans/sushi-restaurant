@@ -450,5 +450,11 @@ align-items: center;
             padding-left: 15px;
             padding-right: 15px;
         }
-
+        #nav-list{
+            text-align: center;
+             background-color: black;
+             opacity: 90%; 
+           width: 10em;
+         margin-left: 240px;
+         }
     }
